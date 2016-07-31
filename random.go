@@ -41,7 +41,7 @@ const (
 // GetRandomString returns a random string with specified length which based on number and letters.
 func GetRandomString(length int) string {
 	return GetRandomStringWithBase(length,
-		RandomBaseNumbers+RandomBaseLowerCaseLetters+RandomBaseUpperCaseLetters,
+		RandomBaseNumbers + RandomBaseLowerCaseLetters + RandomBaseUpperCaseLetters,
 	)
 }
 
@@ -51,7 +51,7 @@ func GetRandomStringWithBase(length int, base string) string {
 	baseBytes := []byte(base)
 	resultBuffer := bytes.Buffer{}
 	for i := 0; i < length; i++ {
-		resultBuffer.WriteByte(baseBytes[rand.Intn(len(baseBytes)-1)])
+		resultBuffer.WriteByte(baseBytes[rand.Intn(len(baseBytes) - 1)])
 	}
 	return resultBuffer.String()
 }

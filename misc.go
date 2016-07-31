@@ -24,8 +24,8 @@ package godjan
 
 import "fmt"
 
-const(
-	version = []int{1,0,0}
+var (
+	version = []int{1, 0, 0}
 )
 
 // GetVersionString returns a string value with current version number.
