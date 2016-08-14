@@ -24,13 +24,13 @@ Now, I implement it with go language.<br>
 
 Begin by installing `godjan` using `go get` command.
 
-```
+```bash
 $ go get github.com/mofei2816/godjan
 ```
 
 If you already have `godjan` installed, updating `godjan` is simple:
 
-```
+```bash
 $ go get -u github.com/mofei2816/godjan
 ```
 
@@ -40,7 +40,7 @@ $ go get -u github.com/mofei2816/godjan
 
 Import to your go file.
 
-```
+```go
 import "github.com/mofei2816/godjan"
 ```
 
@@ -57,7 +57,7 @@ There are 4 algorithms supported by `godjan`.
 
 Make password with default algorithm and random salt by using function `MakePassword`.
 
-```
+```go
 import (
     "github.com/mofei2816/godjan"
 )
@@ -71,7 +71,7 @@ func main() {
 
 Make password with specified algorithm, salt an iter by using function `MakePasswordWithSaltIterAndAlgorithm`.
 
-```
+```go
 import (
     "github.com/mofei2816/godjan"
 )
@@ -94,7 +94,7 @@ func main() {
 
 Check password by using function `CheckPassword`
 
-```
+```go
 import (
     "github.com/mofei2816/godjan"
 )
@@ -110,9 +110,7 @@ func main() {
 
 ## Dependencies
 
-```
-golang.org/x/crypto/pbkdf2
-```
+- `golang.org/x/crypto/pbkdf2`
 
 ## Contributing
 
