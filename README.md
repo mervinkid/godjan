@@ -25,13 +25,13 @@ Now, I implement it with go language.<br>
 Begin by installing `godjan` using `go get` command.
 
 ```bash
-$ go get github.com/mofei2816/godjan
+$ go get github.com/mervinkid/godjan
 ```
 
 If you already have `godjan` installed, updating `godjan` is simple:
 
 ```bash
-$ go get -u github.com/mofei2816/godjan
+$ go get -u github.com/mervinkid/godjan
 ```
 
 ## Usage
@@ -41,7 +41,7 @@ $ go get -u github.com/mofei2816/godjan
 Import to your go file.
 
 ```go
-import "github.com/mofei2816/godjan"
+import "github.com/mervinkid/godjan"
 ```
 
 ### Algorithms
@@ -59,7 +59,7 @@ Make password with default algorithm and random salt by using function `MakePass
 
 ```go
 import (
-    "github.com/mofei2816/godjan"
+    "github.com/mervinkid/godjan"
 )
 
 func main() {
@@ -73,7 +73,7 @@ Make password with specified algorithm, salt an iter by using function `MakePass
 
 ```go
 import (
-    "github.com/mofei2816/godjan"
+    "github.com/mervinkid/godjan"
 )
 
 func main() {
@@ -96,7 +96,7 @@ Check password by using function `CheckPassword`
 
 ```go
 import (
-    "github.com/mofei2816/godjan"
+    "github.com/mervinkid/godjan"
 )
 
 func main() {
@@ -122,7 +122,7 @@ func main() {
 
 ## Authors
 
-[@Mervin](https://github.com/mofei2816) 
+[@Mervin](https://github.com/mervinkid) 
 
 ## License
 
